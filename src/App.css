@@ -1,0 +1,76 @@
+.poppins {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 95vh;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.slider .swiper-pagination-bullet {
+  border: 1.5px solid white;
+}
+
+.categorySlider .swiper-pagination {
+  margin-bottom: 25px;
+}
+
+.categorySlider .swiper-pagination-bullet {
+  border: 1.5px solid #2858a3;
+}
+
+.popularSlider .swiper-button-next::after {
+  display: none;
+}
+.popularSlider .swiper-button-prev::after {
+  display: none;
+}
+
+.popularSlider .swiper-pagination-bullet {
+  border: 1.5px solid #2858a3;
+}
+
+.brands-gradient {
+  background: linear-gradient(96.23deg, #1b54ad 12.98%, #02adec 86.27%);
+}
+.sale-gradient {
+  background: linear-gradient(
+    96.23deg,
+    rgba(27, 84, 173, 0.93) 12.98%,
+    rgba(2, 173, 236, 0.93) 86.27%
+  );
+}
+
+.sale-slider .swiper-pagination {
+  text-align: left;
+}
+
+.drop-pagination .swiper-pagination {
+  margin-bottom: -30px;
+}
+
+.drop-pagination .swiper-pagination-bullet {
+  border: 1.5px solid white;
+}
+
+.drop-pagination .swiper-pagination-bullet {
+  border: 1.5px solid white;
+}
+
+/* .profile-after::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #2858a3;
+  top: 10px;
+} */
