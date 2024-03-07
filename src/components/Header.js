@@ -9,11 +9,8 @@ const Header = () => {
   return (
     <Box className={`z-50 w-full`}>
       <Box className=" w-full">
-        {/* Social Links Bar */}
         <SocialLinkBar />
-        {/* Header Bar */}
         <HeaderBar />
-        {/* Navigation Bar */}
         <NavigationBar />
       </Box>
     </Box>

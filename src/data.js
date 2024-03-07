@@ -10,6 +10,7 @@ import PinterestIcon from "@mui/icons-material/Pinterest";
 import XIcon from "@mui/icons-material/X";
 import brand1 from "./assets/brand1.png";
 import brand2 from "./assets/brand2.png";
+import { FaTiktok } from "react-icons/fa";
 
 export const routes = [
   {
@@ -116,6 +117,7 @@ export const footerSocials = [
   { icon: <InstagramIcon />, link: "/" },
   { icon: <XIcon />, link: "/" },
   { icon: <PinterestIcon />, link: "/" },
+  { icon: <FaTiktok className="text-base mb-1" />, link: "/" },
 ];
 
 export const novexProducts = [

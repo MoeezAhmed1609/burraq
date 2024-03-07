@@ -203,19 +203,19 @@ const ProductsSlider = () => {
       }}
     >
       <div className="absolute top-10 right-20">
-        <div className="swiper-button-next">
-          <ChevronRightIcon className="text-sm text-white" />
-        </div>
-        <div className="swiper-button-prev">
+        <div className="swiper-button-prev -left-10">
           <ChevronLeftIcon className="text-sm text-white" />
         </div>
+        <div className="swiper-button-next -right-10">
+          <ChevronRightIcon className="text-sm text-white" />
+        </div>
       </div>
-      <div className="absolute bg-[#FF3030] p-4 pe-14 poppins top-2 left-0 w-fit rounded-full poppins text-white text-2xl">
+      <div className="absolute bg-[#FF3030] p-4 pe-12 sm:pe-24 poppins top-2 left-0 w-fit rounded-full poppins text-white text-2xl">
         🔥 Hot Sale!
       </div>
       {novexProducts.map((product, i) => (
         <SwiperSlide key={i} className="mt-20">
-          <Box className="h-[90vh] w-full relative bg-white border rounded-2xl flex flex-col items-center py-5">
+          <Box className="h-[80vh] w-full relative bg-white border rounded-2xl flex flex-col items-center py-5">
             <Box className="absolute top-3 right-3 text-sm poppins flex justify-center items-center bg-black text-white rounded-full w-14 h-14">
               Sold
             </Box>
@@ -224,7 +224,7 @@ const ProductsSlider = () => {
               alt={product.name}
               className="h-[40%] w-auto"
             />
-            <Box className="h-[60%] w-full flex flex-col justify-between items-center p-2.5 pt-2.5 sm:pt-2.5 lg:pt-8">
+            <Box className="h-[60%] w-full flex flex-col justify-between items-center p-2.5 pt-2.5 sm:pt-2.5 lg:pt-2.5">
               <Typography className="text-base text-center font-semibold text-[#2858a3] poppins">
                 AED {product.price}
               </Typography>

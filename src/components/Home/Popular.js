@@ -45,12 +45,12 @@ const Popular = () => {
         modules={[Autoplay, Navigation]}
         className="h-full w-full popularSlider relative -mt-14"
       >
-        <div className="absolute top-10 right-20 hidden sm:block">
-          <div className="swiper-button-next">
-            <ChevronRightIcon className="text-sm text-[#2858a3]" />
-          </div>
-          <div className="swiper-button-prev">
+        <div className="absolute top-10 right-20">
+          <div className="swiper-button-prev -left-10">
             <ChevronLeftIcon className="text-sm text-[#2858a3]" />
+          </div>
+          <div className="swiper-button-next -right-10">
+            <ChevronRightIcon className="text-sm text-[#2858a3]" />
           </div>
         </div>
         {novexProducts.map((product, i) => (

@@ -17,7 +17,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import MenuIcon from "@mui/icons-material/Menu";
 
 import logo from "../assets/burraqstar.svg";
-import { routes } from "../data";
+import { novexProducts, routes } from "../data";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -62,6 +62,7 @@ const HeaderBar = () => {
       ))}
     </Box>
   );
+
   return (
     <Box className="h-20 sm:h-28 w-full relative sm:static bg-white gap-x-20 flex items-center px-2.5 sm:px-9 py-5">
       <Box className="flex items-center gap-x-3">
@@ -80,8 +81,8 @@ const HeaderBar = () => {
           alt="burraq star logo"
         />
       </Box>
-      <Box className="flex items-center h-full gap-x-2 sm:gap-x-5 w-[75%]">
-        <Box className="w-[55%] h-[85%] bg-[#f0f0f0] rounded-lg hidden sm:flex items-center justify-between px-8 py-4">
+      <Box className="flex relative items-center h-full gap-x-2 sm:gap-x-5 w-[75%]">
+        <Box className="w-[55%] h-[85%] relative bg-[#f0f0f0] rounded-lg hidden sm:flex items-center justify-between px-8 py-4">
           <input
             className="w-[80%] bg-transparent outline-none text-[#2858A3]"
             placeholder="Search Here..."
@@ -89,6 +90,26 @@ const HeaderBar = () => {
             onChange={(e) => setSearch(e.target.value)}
           />
           <SearchIcon className="cursor-pointer text-2xl text-[#2858A3]" />
+          {search.length > 0 && (
+            <Box className="absolute top-16 border-2 p-3 left-0 rounded-lg z-50 w-full h-[50vh] overflow-y-auto bg-white">
+              {novexProducts
+                .filter((prod) =>
+                  prod.name.toLowerCase().includes(search?.toLowerCase())
+                )
+                .map((product, i) => (
+                  <Box className="flex w-full h-fit my-2.5" key={i}>
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="h-10 w-auto"
+                    />
+                    <Typography className="text-xs ps-3 text-black poppins">
+                      {product.name}
+                    </Typography>
+                  </Box>
+                ))}
+            </Box>
+          )}
         </Box>
 
         <SearchIcon
@@ -117,7 +138,7 @@ const HeaderBar = () => {
         </Link>
       </Box>
       {searchOpen && (
-        <Box className="h-16 w-full absolute -bottom-[65px] left-0 flex items-center sm:hidden p-2.5 bg-[#f0f0f0]">
+        <Box className="h-16 w-full z-50 absolute -bottom-[65px] left-0 flex items-center sm:hidden p-2.5 bg-[#f0f0f0]">
           <Box className="w-full h-full bg-white rounded-lg flex items-center justify-between px-8 py-4">
             <input
               className="w-[80%] bg-transparent outline-none text-[#2858A3]"
@@ -127,6 +148,26 @@ const HeaderBar = () => {
             />
             <SearchIcon className="cursor-pointer text-2xl text-[#2858A3]" />
           </Box>
+          {search.length > 0 && (
+            <Box className="absolute top-[68px] border-2 p-3 left-0 rounded-lg z-50 w-full h-[50vh] overflow-y-auto bg-white">
+              {novexProducts
+                .filter((prod) =>
+                  prod.name.toLowerCase().includes(search?.toLowerCase())
+                )
+                .map((product, i) => (
+                  <Box className="flex w-full h-fit my-2.5" key={i}>
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="h-10 w-auto"
+                    />
+                    <Typography className="text-xs ps-3 text-black poppins">
+                      {product.name}
+                    </Typography>
+                  </Box>
+                ))}
+            </Box>
+          )}
         </Box>
       )}
     </Box>

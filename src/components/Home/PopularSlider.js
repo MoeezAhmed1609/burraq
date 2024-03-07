@@ -42,11 +42,11 @@ export default function PopularSlider() {
       }}
     >
       <div className="absolute top-10 right-20">
-        <div className="swiper-button-next">
-          <ChevronRightIcon className="text-sm text-[#5D5D5D]" />
-        </div>
-        <div className="swiper-button-prev">
+        <div className="swiper-button-prev -left-10">
           <ChevronLeftIcon className="text-sm text-[#5D5D5D]" />
+        </div>
+        <div className="swiper-button-next -right-10">
+          <ChevronRightIcon className="text-sm text-[#5D5D5D]" />
         </div>
       </div>
       <SwiperSlide className="pt-16 pb-8 px-5 md:px-[4%] lg:px-[8%]">
