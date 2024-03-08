@@ -9,34 +9,34 @@ import CreditScoreIcon from "@mui/icons-material/CreditScore";
 const Qualities = () => {
   const features = [
     {
-      logo: <LocalShippingIcon className="text-5xl " />,
+      logo: <LocalShippingIcon className="text-6xl" />,
       title: "Free delivery",
       subtitle: "from AED 40",
     },
     {
-      logo: <StarIcon className="text-5xl" />,
+      logo: <StarIcon className="text-6xl" />,
       title: "Best Quality",
       subtitle: "Brand",
     },
     {
-      logo: <ReplayIcon className="text-5xl" />,
+      logo: <ReplayIcon className="text-6xl" />,
       title: "1 year",
       subtitle: "for free return",
     },
     {
-      logo: <ForumIcon className="text-5xl" />,
+      logo: <ForumIcon className="text-6xl" />,
       title: "Feedback",
       subtitle: "99% real data",
     },
     {
-      logo: <CreditScoreIcon className="text-5xl" />,
+      logo: <CreditScoreIcon className="text-6xl" />,
       title: "Payment",
       subtitle: "Secure",
     },
   ];
 
   return (
-    <Box className="h-fit w-full p-6 gap-x-10 gap-y-5 flex justify-center items-center flex-wrap">
+    <Box className="h-fit w-full p-6 gap-x-10 gap-y-5 flex justify-center items-center flex-wrap my-6">
       {features.map((val, i) => (
         <Box className="flex flex-col items-center group" key={i}>
           <Box className="bg-white p-1 rounded-xl ">

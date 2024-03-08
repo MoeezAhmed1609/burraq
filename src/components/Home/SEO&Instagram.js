@@ -1,14 +1,17 @@
-import { Box, Divider, Typography } from "@mui/material";
 import React from "react";
+import { Box, Divider, Typography } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined";
-import feed from "../../assets/feed.jpg";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
+
+import feed from "../../assets/feed.jpg";
+import feed2 from "../../assets/feed2.jpg";
+import feed3 from "../../assets/feed3.jpg";
+import feed4 from "../../assets/feed4.jpg";
 
 const SEOInstagram = () => {
   return (
@@ -87,47 +90,31 @@ const Slider = () => {
       className="h-full w-full pb-6 mb-10"
       modules={[Autoplay]}
     >
-      <SwiperSlide
-        className="rounded-md bg-cover bg-no-repeat bg-center"
-        style={{ backgroundImage: `url(${feed})` }}
-      >
-        <Box className="w-full h-full rounded-md sale-gradient flex justify-center flex-col gap-y-1 items-center">
-          <InstagramIcon className="text-6xl text-white" />
-          <Typography className="text-base text-white">@buraqstar</Typography>
-        </Box>
-      </SwiperSlide>
-      <SwiperSlide
-        className="rounded-md bg-cover bg-no-repeat bg-center"
-        style={{ backgroundImage: `url(${feed})` }}
-      />
-      <SwiperSlide
-        className="rounded-md bg-cover bg-no-repeat bg-center"
-        style={{ backgroundImage: `url(${feed})` }}
-      />
-      <SwiperSlide
-        className="rounded-md bg-cover bg-no-repeat bg-center"
-        style={{ backgroundImage: `url(${feed})` }}
-      />
-      <SwiperSlide
-        className="rounded-md bg-cover bg-no-repeat bg-center"
-        style={{ backgroundImage: `url(${feed})` }}
-      />
-      <SwiperSlide
-        className="rounded-md bg-cover bg-no-repeat bg-center"
-        style={{ backgroundImage: `url(${feed})` }}
-      />
-      <SwiperSlide
-        className="rounded-md bg-cover bg-no-repeat bg-center"
-        style={{ backgroundImage: `url(${feed})` }}
-      />
-      <SwiperSlide
-        className="rounded-md bg-cover bg-no-repeat bg-center"
-        style={{ backgroundImage: `url(${feed})` }}
-      />
-      <SwiperSlide
-        className="rounded-md bg-cover bg-no-repeat bg-center"
-        style={{ backgroundImage: `url(${feed})` }}
-      />
+      {[
+        feed,
+        feed2,
+        feed3,
+        feed4,
+        feed,
+        feed2,
+        feed3,
+        feed4,
+        feed,
+        feed2,
+        feed3,
+        feed4,
+      ].map((image, i) => (
+        <SwiperSlide
+          className="rounded-md bg-cover bg-no-repeat bg-center group transition"
+          style={{ backgroundImage: `url(${image})` }}
+          key={i}
+        >
+          <Box className="w-full hidden group-hover:flex cursor-pointer h-full rounded-md sale-gradient justify-center flex-col gap-y-1 items-center">
+            <InstagramIcon className="text-6xl text-white" />
+            <Typography className="text-base text-white">@buraqstar</Typography>
+          </Box>
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

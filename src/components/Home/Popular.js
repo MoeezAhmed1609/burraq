@@ -62,7 +62,7 @@ const Popular = () => {
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-[80%] h-auto"
+                className="h-1/2 w-auto"
               />
               <Box className="h-[60%] w-full flex flex-col justify-between items-center p-2.5 pt-2.5 sm:pt-2.5 lg:pt-8">
                 <Typography className="text-base text-center font-semibold text-[#2858a3] poppins">
@@ -71,7 +71,7 @@ const Popular = () => {
                 <Typography className="text-xs text-center line-through -mt-1 text-[#818181] poppins">
                   AED {product.discount}
                 </Typography>
-                <Typography className="text-xs pt-3 w-3/4 text-center px-2 uppercase leading-3 font-semibold text-black poppins">
+                <Typography className="text-xs sm:text-sm pt-3 w-3/4 text-center px-2 uppercase leading-3 font-semibold text-black poppins">
                   {product.name}
                 </Typography>
               </Box>

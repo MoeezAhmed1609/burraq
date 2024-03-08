@@ -76,24 +76,24 @@ export default function PopularSlider() {
                   className="h-1/2 w-auto"
                 />
                 <Box className="h-1/2 w-full flex flex-col justify-between p-2.5 pt-2.5 sm:pt-2.5 lg:pt-8">
-                  <Typography className="text-sm sm:text-base lg:text-lg text-left text-black poppins">
+                  <Typography className="text-sm sm:text-lg lg:text-lg xl:text-2xl text-center w-full px-1 text-black poppins">
                     {product.name}
                   </Typography>
                   <Box>
                     <Box className="flex justify-between px-2 md:px-2 lg:px-5 items-center w-full pb-3">
-                      <Typography className="text-lg font-semibold text-left text-[#FF3030] poppins">
+                      <Typography className="text-lg sm:text-xl xl:text-2xl font-semibold text-left text-[#FF3030] poppins">
                         AED {product.price}
                       </Typography>
-                      <Typography className="text-sm line-through text-left text-[#818181] poppins">
+                      <Typography className="text-sm sm:text-base xl:text-lg line-through text-left text-[#818181] poppins">
                         AED {product.discount}
                       </Typography>
                     </Box>
                     <Box className="flex items-center w-full px-2 md:px-2 lg:px-5">
                       <StarIcon className="text-base text-[#2858a3]" />
-                      <Typography className="text-xs  text-black poppins">
+                      <Typography className="text-sm  text-black poppins">
                         {product.rating}
                       </Typography>
-                      <Typography className="text-[10px] ps-2 text-[#818181] poppins">
+                      <Typography className="text-xs ps-2 text-[#818181] poppins">
                         ( {product.reviews} Reviews )
                       </Typography>
                     </Box>
@@ -131,24 +131,24 @@ export default function PopularSlider() {
                   className="h-1/2 w-auto"
                 />
                 <Box className="h-1/2 w-full flex flex-col justify-between p-2.5 pt-2.5 sm:pt-2.5 lg:pt-8">
-                  <Typography className="text-sm sm:text-base lg:text-lg text-left text-black poppins">
+                  <Typography className="text-sm sm:text-lg lg:text-lg xl:text-2xl text-center w-full px-1 text-black poppins">
                     {product.name}
                   </Typography>
                   <Box>
                     <Box className="flex justify-between px-2 md:px-2 lg:px-5 items-center w-full pb-3">
-                      <Typography className="text-lg font-semibold text-left text-[#FF3030] poppins">
+                      <Typography className="text-lg sm:text-xl xl:text-2xl font-semibold text-left text-[#FF3030] poppins">
                         AED {product.price}
                       </Typography>
-                      <Typography className="text-sm line-through text-left text-[#818181] poppins">
+                      <Typography className="text-sm sm:text-base xl:text-lg line-through text-left text-[#818181] poppins">
                         AED {product.discount}
                       </Typography>
                     </Box>
                     <Box className="flex items-center w-full px-2 md:px-2 lg:px-5">
                       <StarIcon className="text-base text-[#2858a3]" />
-                      <Typography className="text-xs  text-black poppins">
+                      <Typography className="text-sm  text-black poppins">
                         {product.rating}
                       </Typography>
-                      <Typography className="text-[10px] ps-2 text-[#818181] poppins">
+                      <Typography className="text-xs ps-2 text-[#818181] poppins">
                         ( {product.reviews} Reviews )
                       </Typography>
                     </Box>
@@ -186,24 +186,24 @@ export default function PopularSlider() {
                   className="h-1/2 w-auto"
                 />
                 <Box className="h-1/2 w-full flex flex-col justify-between p-2.5 pt-2.5 sm:pt-2.5 lg:pt-8">
-                  <Typography className="text-sm sm:text-base lg:text-lg text-left text-black poppins">
+                  <Typography className="text-sm sm:text-lg lg:text-lg xl:text-2xl text-center w-full px-1 text-black poppins">
                     {product.name}
                   </Typography>
                   <Box>
                     <Box className="flex justify-between px-2 md:px-2 lg:px-5 items-center w-full pb-3">
-                      <Typography className="text-lg font-semibold text-left text-[#FF3030] poppins">
+                      <Typography className="text-lg sm:text-xl xl:text-2xl font-semibold text-left text-[#FF3030] poppins">
                         AED {product.price}
                       </Typography>
-                      <Typography className="text-sm line-through text-left text-[#818181] poppins">
+                      <Typography className="text-sm sm:text-base xl:text-lg line-through text-left text-[#818181] poppins">
                         AED {product.discount}
                       </Typography>
                     </Box>
                     <Box className="flex items-center w-full px-2 md:px-2 lg:px-5">
                       <StarIcon className="text-base text-[#2858a3]" />
-                      <Typography className="text-xs  text-black poppins">
+                      <Typography className="text-sm  text-black poppins">
                         {product.rating}
                       </Typography>
-                      <Typography className="text-[10px] ps-2 text-[#818181] poppins">
+                      <Typography className="text-xs ps-2 text-[#818181] poppins">
                         ( {product.reviews} Reviews )
                       </Typography>
                     </Box>

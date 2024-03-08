@@ -13,7 +13,7 @@ const BrandBanner = () => {
         sx={{ backgroundImage: `url(${bg})` }}
       >
         <img src={novex} className="h-16 w-auto" alt="brand logo" />
-        <Typography className="poppins text-3xl font-semibold text-white">
+        <Typography className="poppins text-2xl sm:text-3xl tex-center px-2 font-semibold text-white">
           Avail Supreme Deals
         </Typography>
         <Box className="flex items-center">

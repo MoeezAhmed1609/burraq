@@ -11,10 +11,10 @@ const OffersBanner = () => {
           backgroundImage: `url(${bg})`,
         }}
       >
-        <Typography className="text-4xl font-semibold text-white poppins capitalize">
+        <Typography className="text-3xl md:text-4xl xl:text-6xl font-semibold text-white poppins capitalize">
           Top Offers
         </Typography>
-        <Typography className="text-4xl font-semibold text-white poppins capitalize">
+        <Typography className="text-3xl md:text-4xl xl:text-6xl font-semibold text-white poppins capitalize">
           No 1. brand in UAE
         </Typography>
         <Button className="uppercase text-white bg-[#02ADEC] p-4 rounded-lg w-fit text-xs poppins font-semibold px-12 mt-6">

@@ -23,7 +23,7 @@ const NavigationBar = () => {
             {categories.map((cat, i) => (
               <Link
                 key={i}
-                to="/"
+                to="/category"
                 className={`w-full flex items-center justify-between gap-x-14 ${
                   i + 1 !== categories.length && "border-b-2 pb-2 mb-2"
                 } `}

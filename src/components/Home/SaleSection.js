@@ -33,14 +33,14 @@ const SaleSection = () => {
         className="absolute top-16 w-[85%] h-fit sm:h-56 rounded-2xl bg-no-repeat bg-center bg-cover"
         sx={{ backgroundImage: `url(${salebackground})` }}
       >
-        <Box className="sale-gradient rounded-2xl h-full w-full p-10">
+        <Box className="sale-gradient rounded-2xl h-full w-full px-10 py-6">
           <Grid container className="h-full">
             <Grid
               item
               md={4}
               sm={5}
               xs={12}
-              className="flex flex-col h-full justify-between"
+              className="flex flex-col h-full justify-between py-4"
             >
               <Box>
                 <Typography className="text-3xl text-white font-semibold poppins">
@@ -126,12 +126,12 @@ const Slider = () => {
       {[1, 2, 3, 4, 5].map((index) => (
         <SwiperSlide key={index}>
           <Box
-            className="w-full h-24 bg-white rounded-lg p-4 flex"
+            className="w-full h-28 bg-white rounded-lg p-4 flex"
             sx={{ boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}
           >
-            <img className="w-1/4 h-auto" src={product} alt="product" />
+            <img className="w-[30%] h-auto" src={product} alt="product" />
             <Box className="flex justify-between flex-col ps-2">
-              <Typography className="text-black poppins text-xs font-semibold uppercase w-1/2">
+              <Typography className="text-black poppins text-xs font-normal uppercase w-3/4">
                 BRACKET FAN (V-COOL) 30
               </Typography>
               <Box className="w-full">
@@ -202,7 +202,7 @@ const ProductsSlider = () => {
         "--swiper-pagination-bullet-horizontal-gap": "6px",
       }}
     >
-      <div className="absolute top-10 right-20">
+      <div className="absolute top-10 right-10">
         <div className="swiper-button-prev -left-10">
           <ChevronLeftIcon className="text-sm text-white" />
         </div>

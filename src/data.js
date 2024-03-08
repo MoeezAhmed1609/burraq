@@ -16,28 +16,34 @@ export const routes = [
   {
     title: "Best Deals",
     mobIcon: <ThumbUpOffAltIcon />,
+    link: "/blogs",
   },
   {
     title: "New Arrivals",
     mobIcon: <AutoAwesomeOutlinedIcon />,
+    link: "/about",
   },
   {
     title: "Brands",
     mobIcon: <TipsAndUpdatesOutlinedIcon />,
+    link: "/product",
   },
   {
     title: "Catalogue",
     icon: <MenuBookOutlinedIcon />,
     mobIcon: <MenuBookOutlinedIcon />,
+    link: "/blog",
   },
   {
     title: "Contact Us",
     mobIcon: <LocalPhoneOutlinedIcon />,
+    link: "/contact",
   },
   {
     title: "Flash Sale",
     icon: <LocalFireDepartmentOutlinedIcon />,
     mobIcon: <LocalFireDepartmentOutlinedIcon />,
+    link: "/policy",
   },
 ];
 

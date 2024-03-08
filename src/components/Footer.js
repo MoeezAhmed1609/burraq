@@ -98,7 +98,7 @@ const Footer = () => {
           item
           xs={12}
           sm={5}
-          className="h-[21vh] flex justify-center sm:justify-start items-end"
+          className="h-fit sm:h-[21vh] flex justify-center sm:justify-start items-end pt-6 py-2 sm:py-0"
         >
           <Typography className="text-xs poppins text-white font-semibold pt-4">
             Copyright 2023 Burraq Star
@@ -108,7 +108,7 @@ const Footer = () => {
           item
           xs={12}
           sm={4}
-          className="h-[21vh] flex justify-center sm:justify-start items-end gap-x-2"
+          className="h-fit sm:h-[21vh] flex justify-center sm:justify-start items-end gap-x-2 py-2 sm:py-0"
         >
           {footerSocials.map((social, i) => (
             <Link to={social.link} key={i} className="text-sm text-white">
@@ -120,7 +120,7 @@ const Footer = () => {
           item
           xs={12}
           sm={3}
-          className="h-[21vh] flex items-end justify-center sm:justify-start"
+          className="h-fit sm:h-[21vh] flex items-end justify-center sm:justify-start py-2 sm:py-0"
         >
           <img
             src={footer_payments}
