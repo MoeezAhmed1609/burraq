@@ -10,7 +10,7 @@ const Content = () => {
       <Box className="w-fit border border-[#FF3030] px-1.5 poppins text-xs text-[#FF3030] uppercase bg-transparent">
         Stock Availability
       </Box>
-      <Typography className="poppins text-3xl font-bold w-3/4 text-[#2E2E2E] capitalize py-2">
+      <Typography className="poppins text-3xl font-bold w-full sm:w-3/4 text-[#2E2E2E] capitalize py-2">
         Fire break glass w/o key type - novex
       </Typography>
       <Typography className="poppins text-xs text-[#02ADEC] capitalize py-1.5">
@@ -71,7 +71,7 @@ const Content = () => {
         products are recognized all around the world. product quality Is
         especially in the electrical we are inspired by British technology.
       </Typography>
-      <Box className="gap-y-4 mt-6">
+      {/* <Box className="gap-y-4 mt-6">
         {features.map((feat, i) => (
           <Box className="flex gap-x-6" key={i}>
             <Typography className="poppins text-sm text-[#5D5D5D] w-20 uppercase">
@@ -82,7 +82,7 @@ const Content = () => {
             </Typography>
           </Box>
         ))}
-      </Box>
+      </Box> */}
     </Box>
   );
 };

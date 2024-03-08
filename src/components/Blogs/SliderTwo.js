@@ -51,11 +51,11 @@ const SliderTwo = () => {
         className="h-full w-full popularSlider relative -mt-14"
       >
         <div className="absolute bottom-10 left-[50%] hidden sm:block">
-          <div className="swiper-button-next bg-[#02adec] w-10 h-10 flex justify-center items-center rounded-full">
-            <ChevronRightIcon className="text-sm text-white" />
-          </div>
-          <div className="swiper-button-prev bg-[#02adec] w-10 h-10 flex justify-center items-center rounded-full">
+          <div className="swiper-button-prev -left-14 bg-[#02adec] w-10 h-10 flex justify-center items-center rounded-full">
             <ChevronLeftIcon className="text-sm text-white" />
+          </div>
+          <div className="swiper-button-next -right-14 bg-[#02adec] w-10 h-10 flex justify-center items-center rounded-full">
+            <ChevronRightIcon className="text-sm text-white" />
           </div>
         </div>
         {[1, 2, 3, 4, 5, 6, 7].map((product, i) => (

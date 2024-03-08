@@ -20,7 +20,7 @@ const Gallery = () => {
   const images = [picture1, picture2, picture3, picture4, picture5];
   return (
     <Box className="w-full h-fit pt-20 px-5 sm:px-10 pb-10">
-      <Typography className="poppins text-center uppercase text-3xl font-bold w-full text-[#2E2E2E] pb-14">
+      <Typography className="poppins text-center capitalize text-3xl font-bold w-full text-[#2E2E2E] pb-5 sm:pb-14">
         Picture Gallery
       </Typography>
 
@@ -80,8 +80,8 @@ const Gallery = () => {
           ))}
         </Grid>
       )}
-      <Box className="w-full flex justify-center mt-10">
-        <Button className="bg-[#1E55AC] py-2.5 px-8 text-white poppins capitalize">
+      <Box className="w-full flex justify-center mt-0 sm:mt-10">
+        <Button className="bg-[#1E55AC] py-4 px-14 text-lg font-semibold text-white poppins capitalize">
           View All
         </Button>
       </Box>

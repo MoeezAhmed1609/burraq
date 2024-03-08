@@ -6,12 +6,12 @@ const Banner2 = () => {
   return (
     <Box
       sx={{ backgroundImage: `url(${bg})` }}
-      className="w-full h-fit bg-cover bg-no-repeat bg-center px-10 md:px-12 lg:px-24 py-24"
+      className="w-full h-fit bg-cover bg-no-repeat bg-center px-7 md:px-12 lg:px-24 py-24"
     >
       <Typography className="poppins text-3xl font-bold text-white capitalize py-2">
         Quality is a trait that we appreciate,
       </Typography>
-      <Typography className="poppins text-sm text-white pt-5">
+      <Typography className="poppins text-xs leading-5 font-light text-white pt-5">
         Quality is a trait that we appreciate, we start with quality and ends in
         the Excellence. We know that organization excellence is not about the
         management of quality, it is about the quality of management. Defining

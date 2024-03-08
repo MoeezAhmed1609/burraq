@@ -22,14 +22,14 @@ export default function Slider({ images }) {
           prevEl: ".swiper-button-prev",
         }}
         modules={[Navigation]}
-        className="h-[76vh] w-full popularSlider"
+        className="h-screen sm:h-[130vh] w-full popularSlider relative"
       >
         <div className="absolute bottom-5 left-[50%] z-50 hidden sm:block">
-          <div className="swiper-button-next bg-black w-10 h-10 rounded-full flex items-center justify-center">
-            <ChevronRightIcon className="text-[10px] text-white" />
-          </div>
-          <div className="swiper-button-prev bg-black w-10 h-10 rounded-full flex items-center justify-center">
+          <div className="swiper-button-prev -left-14  bg-black w-10 h-10 rounded-full flex items-center justify-center">
             <ChevronLeftIcon className="text-[10px] text-white" />
+          </div>
+          <div className="swiper-button-next -right-14 bg-black w-10 h-10 rounded-full flex items-center justify-center">
+            <ChevronRightIcon className="text-[10px] text-white" />
           </div>
         </div>
         {images?.map((image, i) => (
@@ -41,40 +41,43 @@ export default function Slider({ images }) {
               backgroundRepeat: "no-repeat",
               backgroundOrigin: "content-box",
               cursor: "pointer",
-              height: "85%",
+              height: "64%",
             }}
           />
         ))}
+        {images?.length > 1 && (
+          <Grid
+            container
+            sx={{
+              height: "24vh",
+              width: "100%",
+              marginTop: "60px",
+              overflow: "hidden",
+              position: "absolute",
+              top: "58%",
+              left: "0",
+            }}
+          >
+            {images?.map((image, i) => (
+              <Grid item xs={4}>
+                <img
+                  src={image}
+                  loading="lazy"
+                  alt={`Product${i}`}
+                  style={{
+                    height: "auto",
+                    width: "100%",
+                    margin: "10px",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => handleOnSetSwiper(i)}
+                  key={i}
+                />
+              </Grid>
+            ))}
+          </Grid>
+        )}
       </Swiper>
-      {images?.length > 1 && (
-        <Grid
-          container
-          sx={{
-            height: "24vh",
-            width: "100%",
-            marginTop: "60px",
-            overflow: "hidden",
-          }}
-        >
-          {images?.map((image, i) => (
-            <Grid item xs={4}>
-              <img
-                src={image}
-                loading="lazy"
-                alt={`Product${i}`}
-                style={{
-                  height: "auto",
-                  width: "100%",
-                  margin: "10px",
-                  cursor: "pointer",
-                }}
-                onClick={() => handleOnSetSwiper(i)}
-                key={i}
-              />
-            </Grid>
-          ))}
-        </Grid>
-      )}
     </>
   );
 }

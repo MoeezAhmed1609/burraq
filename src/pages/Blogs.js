@@ -12,7 +12,9 @@ const Blogs = () => {
       <Hero bg={bg} title={"Blogs"} />
       <Slider />
       <SliderTwo />
-      <BrandBanner />
+      <Box className="mb-20">
+        <BrandBanner />
+      </Box>
     </Box>
   );
 };

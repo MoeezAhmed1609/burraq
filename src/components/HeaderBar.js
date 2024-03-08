@@ -77,11 +77,13 @@ const HeaderBar = () => {
         <Drawer open={open} onClose={() => setOpen(false)}>
           {DrawerList}
         </Drawer>
-        <img
-          src={logo}
-          className="h-[54px] md:h-[62px] lg:h-[70px] w-auto"
-          alt="burraq star logo"
-        />
+        <Link to="/">
+          <img
+            src={logo}
+            className="h-[54px] md:h-[62px] lg:h-[70px] w-auto"
+            alt="burraq star logo"
+          />
+        </Link>
       </Box>
       <Box className="flex relative items-center h-full gap-x-2 sm:gap-x-5 w-[75%]">
         <Box className="w-[55%] h-[85%] relative bg-[#f0f0f0] rounded-lg hidden sm:flex items-center justify-between px-8 py-4">

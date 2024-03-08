@@ -6,32 +6,20 @@ import novex from "../../assets/novex.jpg";
 const Description = () => {
   return (
     <>
-      <Grid item xs={12} sm={4} className="mt-10">
+      <Grid item xs={12} className="mt-10">
         <Box className="w-full h-fit">
           <Box className="flex gap-x-3">
-            <Button className="bg-black py-2.5 px-8 text-white poppins capitalize">
+            <Button className="bg-black py-4 px-10 text-lg text-white font-semibold poppins capitalize">
               Overview
             </Button>
-            <Button className="bg-[#1E55AC] py-2.5 px-8 text-white poppins capitalize">
-              Summary
+            <Button className="bg-[#1E55AC] py-4 px-10 text-lg text-white font-semibold poppins capitalize">
+              Specifications
             </Button>
-          </Box>
-          <Box className="gap-y-4 mt-6">
-            {features.map((feat, i) => (
-              <Box className="flex gap-x-6" key={i}>
-                <Typography className="poppins text-sm text-[#5D5D5D] w-[30%] uppercase">
-                  {feat.title}
-                </Typography>
-                <Typography className="poppins text-sm text-[#5D5D5D] uppercase">
-                  {feat.value}
-                </Typography>
-              </Box>
-            ))}
           </Box>
         </Box>
       </Grid>
-      <Grid item xs={12} sm={8} className="mt-10">
-        <Typography className="poppins text-sm text-[#5D5D5D] capitalize py-1.5">
+      <Grid item xs={12} sm={7} className="mt-10">
+        <Typography className="poppins text-xs leading-6 text-[#5D5D5D] py-1.5">
           Novex is a British brand in which we produce Electrical products.
           these products are recognized all around the world. product quality Is
           especially in the electrical we are inspired by British technology and
@@ -51,16 +39,30 @@ const Description = () => {
           </Typography>
           <Button
             variant="outlined"
-            className="border border-black py-3 px-10 capitalize text-black poppins text-sm"
+            className="border-[1.5px] font-semibold border-black py-3 px-8 capitalize text-black poppins text-base"
           >
             View
           </Button>
           <Button
             variant="outlined"
-            className="border border-[#1E55AC] py-3 px-10 capitalize text-[#1E55AC] poppins text-sm"
+            className="border-[1.5px] font-semibold border-[#1E55AC] py-3 px-8 capitalize text-[#1E55AC] poppins text-base"
           >
             Download
           </Button>
+        </Box>
+      </Grid>
+      <Grid item xs={12} sm={5} className="mt-5 ps-0 sm:ps-16">
+        <Box className=" mt-6">
+          {features.map((feat, i) => (
+            <Box className="flex gap-x-6 my-2" key={i}>
+              <Typography className="poppins text-sm text-[#5D5D5D] w-[30%] uppercase">
+                {feat.title}
+              </Typography>
+              <Typography className="poppins text-sm text-[#5D5D5D] uppercase">
+                {feat.value}
+              </Typography>
+            </Box>
+          ))}
         </Box>
       </Grid>
     </>

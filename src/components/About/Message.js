@@ -18,12 +18,12 @@ const Message = () => {
     "• Dynamic strategic collegial approach",
   ];
   return (
-    <Grid container className="py-16 px-4 sm:p-16 relative h-fit">
+    <Grid container className="py-16 px-4 sm:p-[70px] relative h-fit">
       <Box className="absolute top-6 right-0">
         <img className="h-[70vh] w-auto" src={watermark} alt="watermark" />
       </Box>
       <Grid item xs={12}>
-        <Typography className="poppins uppercase text-3xl font-bold w-3/4 text-[#2E2E2E] mb-5 py-2">
+        <Typography className="poppins uppercase text-3xl ps-3 font-bold w-3/4 text-[#2E2E2E] mb-5 py-2">
           Chairman's Message
         </Typography>
       </Grid>
@@ -31,12 +31,12 @@ const Message = () => {
         item
         xs={12}
         sm={12}
-        md={4}
-        className="py-6 px-4 sm:px-10 border-r-0 sm:border-r-0 lg:border-r-2 border-[#009EE2] flex justify-center"
+        md={3}
+        className="py-6 px-4 border-r-0 sm:border-r-0 lg:border-r-2 border-[#009EE2] flex justify-center"
       >
-        <img className="h-80 w-auto" src={profile} alt="Profile" />
+        <img className="w-auto z-10" src={profile} alt="Profile" />
       </Grid>
-      <Grid item xs={12} sm={12} md={8} className="py-6 px-4 sm:px-10">
+      <Grid item xs={12} sm={12} md={9} className="py-6 px-4 sm:px-10">
         <Typography className="text-xs pb-4 text-[#152E3A] poppins">
           As a chairman it is with great pride to see that BURAQ STAR GROUP OF
           COMPANIES has successfully planned and managed its transformation to
@@ -64,7 +64,10 @@ const Message = () => {
           business partners across the world for their continued support, which
           I greatly appreciate and cherish
         </Typography>
-        <Typography className="text-sm pt-8 text-[#02ADEC] poppins">
+      </Grid>
+      <Grid xs={12} sm={3} />
+      <Grid item xs={12} sm={9} className="px-4 sm:px-10">
+        <Typography className="text-lg pt-0 sm:pt-8 text-[#02ADEC] poppins">
           Sumair Malik
         </Typography>
       </Grid>
@@ -79,7 +82,7 @@ const Message = () => {
           delivery of valuable, reliable products to our valued customers.
         </Typography>
       </Grid>
-      <Grid item xs={12} sm={6} className="py-6 px-4 sm:px-10">
+      <Grid item xs={12} sm={6} className="pt-6 sm:py-6 px-4 sm:px-10">
         <ul className="gap-y-3">
           {list.slice(0, 6).map((point, i) => (
             <li key={i} className="text-xs text-[#152E3A] poppins">
@@ -88,7 +91,7 @@ const Message = () => {
           ))}
         </ul>
       </Grid>
-      <Grid item xs={12} sm={6} className="py-6 px-4 sm:px-10">
+      <Grid item xs={12} sm={6} className="pb-6 sm:py-6 px-4 sm:px-10">
         <ul className="gap-y-3">
           {list.slice(6, 12).map((point, i) => (
             <li key={i} className="text-xs text-[#152E3A] poppins">

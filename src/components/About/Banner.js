@@ -23,7 +23,7 @@ const Banner = () => {
   return (
     <Box
       sx={{ backgroundImage: `url(${bg})` }}
-      className="w-full h-fit sm:h-56 bg-cover bg-no-repeat bg-center px-10 md:px-12 lg:px-24 py-8 sm:py-0"
+      className="w-full h-fit sm:h-[300px] bg-cover bg-no-repeat bg-center px-10 md:px-12 lg:px-24 py-8 sm:py-0"
     >
       <Grid container className="h-full flex items-center">
         {tags.map((tag, i) => (
