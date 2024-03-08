@@ -52,12 +52,12 @@ const Contact = () => {
           item
           xs={12}
           sm={6}
-          className="w-full h-fit p-10 mt-8 sm:mt-0 bg-[#F4F6F7] rounded-md flex flex-col items-center"
+          className="w-full h-fit py-10 px-5 sm:p-10 mt-8 sm:mt-0 bg-[#F4F6F7] rounded-md flex flex-col items-center"
         >
           <Typography className="poppins text-3xl text-black">
             Request a Quote Today
           </Typography>
-          <Box className="flex flex-col items-start w-full px-5 pt-8">
+          <Box className="flex flex-col items-start w-full px-0 sm:px-5 pt-8">
             <Typography className="poppins font-semibold uppercase text-xs text-black">
               Your Name
             </Typography>
@@ -67,7 +67,7 @@ const Contact = () => {
               placeholder="Enter your name"
             />
           </Box>
-          <Box className="flex flex-col items-start w-full px-5 pt-3">
+          <Box className="flex flex-col items-start w-full px-0 sm:px-5 pt-3">
             <Typography className="poppins font-semibold uppercase text-xs text-black">
               Email Address
             </Typography>
@@ -77,7 +77,7 @@ const Contact = () => {
               placeholder="Enter your email"
             />
           </Box>
-          <Box className="flex flex-col items-start w-full px-5 pt-3">
+          <Box className="flex flex-col items-start w-full px-0 sm:px-5 pt-3">
             <Typography className="poppins font-semibold uppercase text-xs text-black">
               phone
             </Typography>
@@ -87,7 +87,7 @@ const Contact = () => {
               placeholder="Enter your phone"
             />
           </Box>
-          <Box className="flex flex-col items-start w-full px-5 pt-3">
+          <Box className="flex flex-col items-start w-full px-0 sm:px-5 pt-3">
             <Typography className="poppins font-semibold uppercase text-xs text-black">
               Message
             </Typography>
@@ -97,7 +97,7 @@ const Contact = () => {
               placeholder="Enter your message"
             />
           </Box>
-          <Box className="flex flex-col items-start w-full px-5 pt-3">
+          <Box className="flex flex-col items-start w-full px-0 sm:px-5 pt-3">
             <Button className="bg-[#02ADEC] text-white rounded-sm text-xs poppins py-2.5 px-8">
               Submit
             </Button>
@@ -127,7 +127,7 @@ const Contact = () => {
               <Typography className="poppins text-base text-[#02ADEC] font-semibold">
                 Email
               </Typography>
-              <Typography className="poppins text-base text-black">
+              <Typography className="poppins text-sm sm:text-base text-black">
                 ecommerce@buraqstar.com
               </Typography>
             </Box>

@@ -36,7 +36,7 @@ const NavigationBar = () => {
         )}
       </Link>
       {routes.map((route, i) => (
-        <Link to="/" key={i} className="flex items-center">
+        <Link to={route.link} key={i} className="flex items-center">
           {route?.icon && (
             <span className="text-lg text-[#FC4747] -mt-1 pe-1.5">
               {route?.icon}

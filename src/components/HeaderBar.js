@@ -40,14 +40,16 @@ const HeaderBar = () => {
       role="presentation"
       onClick={() => setOpen(false)}
     >
-      <img
-        src={logo}
-        className="h-[54px] md:h-[62px] lg:h-[70px] w-auto mb-8"
-        alt="burraq star logo"
-      />
+      <Link to={"/"}>
+        <img
+          src={logo}
+          className="h-[54px] md:h-[62px] lg:h-[70px] w-auto mb-8"
+          alt="burraq star logo"
+        />
+      </Link>
       {routes.map((route, i) => (
         <>
-          <Link to="/" key={i} className="flex items-center">
+          <Link to={route.link} key={i} className="flex items-center">
             {route?.mobIcon && (
               <span className="text-lg text-[#2858A3] -mt-1 pe-4">
                 {route?.mobIcon}
@@ -129,7 +131,7 @@ const HeaderBar = () => {
         </Link>
 
         <Link to="/" className="h-full flex items-center">
-          <Button className="min-w-fit h-[85%] rounded-full sm:rounded-full lg:rounded-lg px-1 sm:px-6 gap-x-0 sm:gap-x-6 text-white bg-[#2858a3] cursor-pointer flex items-center">
+          <Button className="min-w-fit h-[85%] rounded-full sm:rounded-full lg:rounded-lg px-1 sm:px-6 gap-x-0 sm:gap-x-3 text-white bg-[#2858a3] cursor-pointer flex items-center">
             <AccountCircleIcon className="text-2xl sm:text-4xl" />
             <Typography className="poppins font-semibold hidden sm:hidden lg:block">
               My Account

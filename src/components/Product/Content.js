@@ -32,7 +32,7 @@ const Content = () => {
         </Typography>
       </Box>
       <Box className="flex my-3">
-        <Box className="flex items-center">
+        <Box className="flex items-center flex-wrap">
           <Typography className="poppins text-sm text-[#2E2E2E] capitalize py-1.5">
             Choose Quantity:
           </Typography>
@@ -45,7 +45,7 @@ const Content = () => {
               <Remove className="text-xs text-black" />
             </IconButton>
           </Box>
-          <Button className="bg-[#1E55AC] py-2.5 px-8 text-white poppins capitalize">
+          <Button className="bg-[#1E55AC] w-full sm:w-fit mt-2.5 sm:mt-0 py-2.5 px-8 text-white poppins capitalize">
             Add to cart
           </Button>
         </Box>

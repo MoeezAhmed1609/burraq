@@ -67,7 +67,7 @@ const SaleSection = () => {
           </Grid>
         </Box>
       </Box>
-      <Box className="h-fit text-white w-full bg-[#141516] pt-48 sm:pt-40 pb-14 px-6 sm:p-14">
+      <Box className="h-fit text-white w-full bg-[#141516] pt-60 sm:pt-40 pb-14 px-6 sm:p-14">
         <ProductsSlider />
       </Box>
     </Box>
@@ -176,11 +176,11 @@ const ProductsSlider = () => {
       //   }}
       breakpoints={{
         0: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 10,
         },
         480: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 10,
         },
         768: {
@@ -210,7 +210,7 @@ const ProductsSlider = () => {
           <ChevronRightIcon className="text-sm text-white" />
         </div>
       </div>
-      <div className="absolute bg-[#FF3030] p-4 pe-12 sm:pe-24 poppins top-2 left-0 w-fit rounded-full poppins text-white text-2xl">
+      <div className="absolute bg-[#FF3030] p-4 pe-10 sm:pe-24 poppins top-2 left-0 w-fit rounded-full poppins text-white text-2xl">
         🔥 Hot Sale!
       </div>
       {novexProducts.map((product, i) => (

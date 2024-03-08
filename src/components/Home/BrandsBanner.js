@@ -22,7 +22,7 @@ const BrandsBanner = () => {
             Our Brands
           </Typography>
 
-          <Box className="w-[90%] h-fit sm:h-28 pb-5 gap-y-5 flex flex-wrap justify-evenly items-center">
+          <Box className="w-[85%] h-fit sm:h-28 pb-5 gap-y-5 flex flex-wrap justify-evenly items-center">
             <div className="w-1/2 sm:w-1/4 flex justify-between items-center group transition-all duration-500">
               <img
                 src={buraq}
