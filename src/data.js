@@ -54,57 +54,57 @@ export const footerLinks = [
     links: [
       {
         name: "My Account",
-        link: "/",
+        link: "/about",
       },
       {
         name: "Payments",
-        link: "/",
+        link: "/blogs",
       },
       {
         name: "Term of use",
-        link: "/",
+        link: "/terms",
       },
       {
         name: "Deliveries of Returns",
-        link: "/",
+        link: "/policy",
       },
       {
         name: "Gift Card",
-        link: "/",
+        link: "/product",
       },
       {
         name: "Refund & Return Policy",
-        link: "/",
+        link: "/policy",
       },
       {
         name: "FAQs",
-        link: "/",
+        link: "/blog",
       },
     ],
   },
   {
     title: "About Us",
-    link: "",
+    link: "/about",
     links: [
       {
         name: "Product",
-        link: "/",
+        link: "/product",
       },
       {
         name: "Our Story",
-        link: "/",
+        link: "/about",
       },
       {
         name: "Job Opportunities",
-        link: "/",
+        link: "/blogs",
       },
       {
         name: "Store Locator",
-        link: "/",
+        link: "/blog",
       },
       {
         name: "Blog",
-        link: "/",
+        link: "/blogs",
       },
       {
         name: "Reviews",
