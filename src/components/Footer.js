@@ -15,7 +15,7 @@ const Footer = () => {
   const [email, setEmail] = useState("");
   return (
     <Box
-      className="w-full h-fit sm:h-[90vh] bg-cover bg-no-repeat bg-center p-8 md:p-10 lg:p-20 pb-3"
+      className="w-full h-fit bg-cover bg-no-repeat bg-center p-8 md:p-10 lg:p-20 lg:pb-8 md:pb-8 pb-3"
       sx={{ backgroundImage: `url(${bg})` }}
     >
       <Grid container>

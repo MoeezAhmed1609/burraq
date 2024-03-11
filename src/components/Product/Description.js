@@ -60,20 +60,23 @@ const Description = () => {
           </Box>
         </Grid>
       ) : (
-        <Grid item xs={12} sm={5} className="mt-5 ps-0 sm:ps-16">
-          <Box className=" mt-6">
-            {features.map((feat, i) => (
-              <Box className="flex gap-x-6 my-2" key={i}>
-                <Typography className="poppins text-sm text-[#5D5D5D] w-[30%] uppercase">
-                  {feat.title}
-                </Typography>
-                <Typography className="poppins text-sm text-[#5D5D5D] uppercase">
-                  {feat.value}
-                </Typography>
-              </Box>
-            ))}
-          </Box>
-        </Grid>
+        <>
+          <Grid item xs={12} sm={7} className="mt-10 hidden sm:block" />
+          <Grid item xs={12} sm={5} className="mt-5">
+            <Box className=" mt-6">
+              {features.map((feat, i) => (
+                <Box className="flex gap-x-6 my-2" key={i}>
+                  <Typography className="poppins text-sm text-[#5D5D5D] w-[30%] uppercase">
+                    {feat.title}
+                  </Typography>
+                  <Typography className="poppins text-sm text-[#5D5D5D] uppercase">
+                    {feat.value}
+                  </Typography>
+                </Box>
+              ))}
+            </Box>
+          </Grid>
+        </>
       )}
     </>
   );

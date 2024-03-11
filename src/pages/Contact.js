@@ -40,31 +40,37 @@ const Contact = () => {
           <Typography className="poppins text-5xl text-black">
             Contact Us
           </Typography>
-          <Box className="py-5 border-b-2 border-dashed">
+          <Box className="py-7 me-0 md:me-[20%] lg:me-[30%] border-b-2 border-dashed">
             <Typography className="poppins text-base sm:text-lg uppercase font-semibold text-[#02adec]">
               Sharjah Office
             </Typography>
-            <Typography className="poppins text-base capitalize font-medium text-[#25252A] w-3/4">
+            <Typography className="poppins text-base capitalize font-medium text-[#25252A] w-full">
               1307 - 13th floor al mulla towerittihad road near ansar mall
             </Typography>
-            <Typography className="poppins text-base sm:text-lg font-medium capitalize text-[#25252A] w-3/4">
+            <Typography className="poppins text-base sm:text-lg font-medium capitalize text-[#25252A] w-full">
               tel: +971 6 5616976
             </Typography>
           </Box>
-          <Box className="py-5 border-b-2 border-dashed">
+          <Box className="py-7 me-0 md:me-[20%] lg:me-[30%] border-b-2 border-dashed">
             <Typography className="poppins text-base sm:text-lg uppercase font-semibold text-[#02adec]">
               Showroom
             </Typography>
-            <Typography className="poppins text-base capitalize font-medium text-[#25252A] w-3/4">
-              5,6 & 7 Nakhel Road,Deira Tel: +971 4 2248520
+            <Typography className="poppins text-base capitalize font-medium text-[#25252A] w-full">
+              5,6 & 7 Nakhel Road,Deira
+            </Typography>
+            <Typography className="poppins text-base sm:text-lg font-medium capitalize text-[#25252A] w-full">
+              Tel: +971 4 2248520
             </Typography>
           </Box>
-          <Box className="py-5 border-b-2 border-dashed">
+          <Box className="py-7 me-0 md:me-[20%] lg:me-[30%] border-b-2 border-dashed">
             <Typography className="poppins text-base sm:text-lg uppercase font-semibold text-[#02adec]">
               WAREHOUSE
             </Typography>
-            <Typography className="poppins text-base capitalize font-medium text-[#25252A] w-3/4">
-              F-7 Industrial Area No. 8Sharjah Tel: +971 6 5313787
+            <Typography className="poppins text-base capitalize font-medium text-[#25252A] w-full">
+              F-7 Industrial Area No. 8 Sharjah
+            </Typography>
+            <Typography className="poppins text-base sm:text-lg font-medium capitalize text-[#25252A] w-full">
+              Tel: +971 6 5313787
             </Typography>
           </Box>
         </Grid>
