@@ -5,7 +5,7 @@ import bg from "../../assets/blogbg.jpg";
 const BlogLayout = () => {
   return (
     <>
-      <Typography className="poppins text-4xl text-black pb-8">
+      <Typography className="poppins font-normal capitalize text-4xl text-[#25252A] pb-8">
         Novex is a British brand in which we produce Electrical
       </Typography>
       <img className="w-full h-auto" src={bg} alt="blog bg" />

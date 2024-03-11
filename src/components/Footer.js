@@ -101,7 +101,7 @@ const Footer = () => {
           className="h-fit sm:h-[21vh] flex justify-center sm:justify-start items-end pt-6 py-2 sm:py-0"
         >
           <Typography className="text-xs poppins text-white font-semibold pt-4">
-            Copyright 2023 Burraq Star
+            Copyright 2024 Burraq Star
           </Typography>
         </Grid>
         <Grid

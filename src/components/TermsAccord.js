@@ -84,14 +84,14 @@ const TermsAccord = () => {
             aria-controls="panel1bh-content"
             id="panel1bh-header"
           >
-            <Typography sx={{ width: "100%" }} className="poppins text-xs">
+            <Typography sx={{ width: "100%" }} className="nunito text-base font-semibold sm:text-xl">
               {term.title}
             </Typography>
           </AccordionSummary>
-          <AccordionDetails className="bg-white text-xs poppins text-[#5D5D5D] py-3 px-5">
+          <AccordionDetails className="bg-white text-sm nunito text-[#152E3A] py-3 px-5">
             <ol>
               {term.points.map((point, i) => (
-                <li className="poppins" key={i}>
+                <li className="nunito py-1" key={i}>
                   {i + 1}. {point}
                 </li>
               ))}

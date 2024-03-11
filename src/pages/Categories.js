@@ -94,7 +94,7 @@ const Categories = () => {
                 )}
               </Button>
               {sortOn && (
-                <Box className="absolute gap-y-3 p-2.5 top-8 w-full left-0 bg-white border">
+                <Box className="absolute gap-y-3 p-2.5 z-50 top-8 w-full left-0 bg-white border">
                   {[1, 2, 3, 4].map((index) => (
                     <Typography
                       key={index}
@@ -142,7 +142,7 @@ const Categories = () => {
                     <Typography className="poppins uppercase text-xs text-[#292A2C]">
                       1000W L/CONTROL DMR (SB) CHROME - NOVEXAED42
                     </Typography>
-                    <Box className="flex justify-between px-[20%] pt-1">
+                    <Box className="flex justify-center gap-x-4 pt-1">
                       <Typography className="poppins uppercase text-xs text-[#FF0F0F]">
                         AED 20
                       </Typography>

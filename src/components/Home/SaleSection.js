@@ -1,19 +1,11 @@
 import React from "react";
-import {
-  Box,
-  Button,
-  Grid,
-  IconButton,
-  Rating,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Grid, Rating, Typography } from "@mui/material";
 import LinearProgress, {
   linearProgressClasses,
 } from "@mui/material/LinearProgress";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import StarIcon from "@mui/icons-material/Star";
+import fire from "../../assets/fire.svg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -82,8 +74,7 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   },
   [`& .${linearProgressClasses.bar}`]: {
     borderRadius: 5,
-    backgroundColor:
-      "linear-gradient(96.23deg, #1B54AD 12.98%, #02ADEC 86.27%);",
+    background: "linear-gradient(96.23deg, #1B54AD 12.98%, #02ADEC 86.27%)",
   },
 }));
 
@@ -129,14 +120,14 @@ const Slider = () => {
             className="w-full h-28 bg-white rounded-lg p-4 flex"
             sx={{ boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}
           >
-            <img className="w-[30%] h-auto" src={product} alt="product" />
+            <img className="w-[30%] h-fit" src={product} alt="product" />
             <Box className="flex justify-between flex-col ps-2">
-              <Typography className="text-black poppins text-xs font-normal uppercase w-3/4">
+              <Typography className="text-black poppins text-xs font-semibold uppercase w-3/4">
                 BRACKET FAN (V-COOL) 30
               </Typography>
               <Box className="w-full">
-                <Box className="flex justify-between">
-                  <Typography className="text-[#2858a3] poppins text-[10px] font-semibold uppercase w-1/2">
+                <Box className="flex justify-between items-end mb-2">
+                  <Typography className="text-[#2858a3] poppins text-xs font-semibold uppercase w-1/2">
                     AED 408
                   </Typography>
                   <Typography className="text-[#A7A7A7] poppins text-[10px] w-1/2">
@@ -210,8 +201,8 @@ const ProductsSlider = () => {
           <ChevronRightIcon className="text-sm text-white" />
         </div>
       </div>
-      <div className="absolute bg-[#FF3030] p-4 pe-10 sm:pe-24 poppins top-2 left-0 w-fit rounded-full poppins text-white text-2xl">
-        🔥 Hot Sale!
+      <div className="absolute bg-[#FF3030] p-4 pe-14 w-fit montserrat top-2 left-0 font-semibold rounded-full poppins text-white text-2xl flex items-center">
+        <img src={fire} alt="fire" className="h-7 w-fit me-2" /> Hot Sale!
       </div>
       {novexProducts.map((product, i) => (
         <SwiperSlide key={i} className="mt-20">
@@ -246,7 +237,7 @@ const ProductsSlider = () => {
                 value={70}
                 className="w-[90%]"
               />
-              <Typography className="text-[10px] -mt-3 text-center text-[#818181] poppins">
+              <Typography className="text-[10px] text-center text-[#818181] poppins">
                 {56} left stock
               </Typography>
               <Button

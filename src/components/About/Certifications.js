@@ -16,13 +16,13 @@ const Certifications = () => {
   ];
   return (
     <Box className="w-full h-fit pb-16">
-      <Typography className="poppins text-center uppercase text-3xl font-bold w-full text-[#2E2E2E] mb-5 py-2">
+      <Typography className="poppins text-center capitalize text-3xl font-bold w-full text-[#2E2E2E] mb-5 sm:mb-10 py-2">
         Our Certifications
       </Typography>
       <Grid container className="px-5 sm:px-10 flex justify-center">
         {certificates.map((cert, i) => (
           <Grid item xs={12} sm={4} key={i} className="p-2.5">
-            <Box className="w-full h-fit p-3 bg-[#e8f8fd]">
+            <Box className="w-full h-fit bg-[#e8f8fd]">
               <img
                 src={cert}
                 alt={`certificate${i}`}

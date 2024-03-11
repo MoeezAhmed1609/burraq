@@ -18,6 +18,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Blogs from "./pages/Blogs";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import FAQ from "./pages/FAQ";
 
 const AppRoutes = () => {
   return (
@@ -34,6 +35,7 @@ const AppRoutes = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<FAQ />} />
       </Routes>
       <Footer />
     </Router>

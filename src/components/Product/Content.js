@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Button, Divider, IconButton, Typography } from "@mui/material";
 import { Add, Remove } from "@mui/icons-material";
 import { features } from "../../data";
 
 const Content = () => {
-  
   return (
     <Box className="h-full w-full px-0 sm:px-10">
       <Box className="w-fit border border-[#FF3030] px-1.5 poppins text-xs text-[#FF3030] uppercase bg-transparent">
@@ -20,32 +19,34 @@ const Content = () => {
         ED1D452
       </Typography>
       <Typography className="poppins text-xs text-[#5D5D5D] capitalize py-1.5">
-        Availability: 13 Available in Stock
+        <span className="pe-1">Availability: </span>13 Available in Stock
       </Typography>
       <Divider className="bg-[#eff0f0] mt-6 mb-4" />
       <Box className="flex">
-        <Typography className="poppins text-sm text-[#2E2E2E] capitalize py-1.5">
+        <Typography className="poppins text-sm text-[#2E2E2E] capitalize py-1.5 pe-2">
           Tag:
         </Typography>
         <Typography className="poppins text-sm text-[#5D5D5D] capitalize py-1.5">
           Electrical Accessories, Electronic Products
         </Typography>
       </Box>
-      <Box className="flex my-3">
-        <Box className="flex items-center flex-wrap">
-          <Typography className="poppins text-sm text-[#2E2E2E] capitalize py-1.5">
-            Choose Quantity:
-          </Typography>
-          <Box className="flex items-center mx-4 justify-between bg-transparent border rounded-md px-2.5 py-1.5">
-            <IconButton size="small" className="">
-              <Add className="text-xs text-black" />
-            </IconButton>
-            <span className="px-4">1</span>
-            <IconButton size="small" className="">
-              <Remove className="text-xs text-black" />
-            </IconButton>
+      <Box className="flex my-3 w-full">
+        <Box className="flex items-center flex-wrap w-full">
+          <Box className="w-full sm:w-[55%] flex items-center">
+            <Typography className="poppins text-sm sm:text-base text-[#2E2E2E] capitalize py-1.5 pe-2">
+              Choose Quantity:
+            </Typography>
+            <Box className="flex items-center justify-between bg-transparent border rounded-md px-3 py-1.5">
+              <IconButton size="small" className="">
+                <Remove className="text-sm text-black" />
+              </IconButton>
+              <span className="px-4">1</span>
+              <IconButton size="small" className="">
+                <Add className="text-sm text-black" />
+              </IconButton>
+            </Box>
           </Box>
-          <Button className="bg-[#1E55AC] w-full sm:w-fit mt-2.5 sm:mt-0 py-2.5 px-8 text-white poppins capitalize">
+          <Button className="bg-[#1E55AC] w-full sm:w-[45%] mt-2.5 sm:mt-0 py-2.5 px-8 text-white poppins capitalize">
             Add to cart
           </Button>
         </Box>

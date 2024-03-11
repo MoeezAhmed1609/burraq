@@ -27,11 +27,11 @@ const Banner = () => {
     >
       <Grid container className="h-full flex items-center">
         {tags.map((tag, i) => (
-          <Grid item xs={12} sm={4} key={i} className="py-4 sm:px-4">
-            <Typography className="poppins text-2xl font-bold text-white capitalize pb-2">
+          <Grid item xs={12} sm={4} key={i} className="py-4">
+            <Typography className="nunito uppercase text-2xl font-bold text-white  pb-2">
               {tag.title}
             </Typography>
-            <Typography className="poppins text-sm text-white">
+            <Typography className="nunito  text-xs text-white">
               {tag.subtitle}
             </Typography>
           </Grid>

@@ -5,7 +5,7 @@ import profile from "../../assets/profile.jpg";
 
 const Message = () => {
   const list = [
-    "• A well known, unbeatable name in the world of Electrical",
+    "A well known, unbeatable name in the world of Electrical",
     "• Easy to approach",
     "• User friendly products",
     "• Proactive approach",
@@ -18,7 +18,10 @@ const Message = () => {
     "• Dynamic strategic collegial approach",
   ];
   return (
-    <Grid container className="py-16 px-4 sm:p-[70px] relative h-fit">
+    <Grid
+      container
+      className="py-16 px-4 sm:py-[70px] sm:ps-[70px] sm:pe-10 relative h-fit"
+    >
       <Box className="absolute top-6 right-0">
         <img className="h-[70vh] w-auto" src={watermark} alt="watermark" />
       </Box>
@@ -36,8 +39,8 @@ const Message = () => {
       >
         <img className="w-auto z-10" src={profile} alt="Profile" />
       </Grid>
-      <Grid item xs={12} sm={12} md={9} className="py-6 px-4 sm:px-10">
-        <Typography className="text-xs pb-4 text-[#152E3A] poppins">
+      <Grid item xs={12} sm={12} md={9} className="py-6 px-4">
+        <Typography className="text-sm xl:text-base pb-4 text-[#152E3A] nunito">
           As a chairman it is with great pride to see that BURAQ STAR GROUP OF
           COMPANIES has successfully planned and managed its transformation to
           compete both at regional and international level since its inception
@@ -48,7 +51,7 @@ const Message = () => {
           alliance, and result oriented products has been a key contributor to
           expand, capture and win the future leads locally and globally.
         </Typography>
-        <Typography className="text-xs text-[#152E3A] poppins">
+        <Typography className="text-sm xl:text-base text-[#152E3A] nunito">
           Despite of volatile changes company is still flexibly positioned in
           its diverse market and commercializes differentiated world class,
           economical approach products and services that enable their value
@@ -72,7 +75,7 @@ const Message = () => {
         </Typography>
       </Grid>
       <Grid item xs={12} className="py-6 px-4 sm:px-10 mt-10">
-        <Typography className="text-xs pb-4 text-[#152E3A] poppins">
+        <Typography className="text-sm xl:text-base pb-4 text-[#152E3A] nunito">
           Buraq Star Group of Companies, sound as a well reputed name in the
           manufacturing of wide range of high standards electrical products with
           an aim to cater the overall requirements of global market.BSGC is
@@ -83,18 +86,18 @@ const Message = () => {
         </Typography>
       </Grid>
       <Grid item xs={12} sm={6} className="pt-6 sm:py-6 px-4 sm:px-10">
-        <ul className="gap-y-3">
+        <ul>
           {list.slice(0, 6).map((point, i) => (
-            <li key={i} className="text-xs text-[#152E3A] poppins">
+            <li key={i} className="text-sm xl:text-base text-[#152E3A] nunito py-1.5">
               {point}
             </li>
           ))}
         </ul>
       </Grid>
       <Grid item xs={12} sm={6} className="pb-6 sm:py-6 px-4 sm:px-10">
-        <ul className="gap-y-3">
+        <ul>
           {list.slice(6, 12).map((point, i) => (
-            <li key={i} className="text-xs text-[#152E3A] poppins">
+            <li key={i} className="text-sm xl:text-base text-[#152E3A] nunito py-1.5">
               {point}
             </li>
           ))}
