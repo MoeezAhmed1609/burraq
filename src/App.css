@@ -63,6 +63,12 @@
   text-align: left;
 }
 
+@media screen and (max-width: 480px) {
+  .sale-slider .swiper-pagination {
+    display: none;
+  }
+}
+
 .drop-pagination .swiper-pagination {
   margin-bottom: -30px;
 }

@@ -78,7 +78,7 @@ export const footerLinks = [
       },
       {
         name: "FAQs",
-        link: "/blog",
+        link: "/faq",
       },
     ],
   },
@@ -108,7 +108,7 @@ export const footerLinks = [
       },
       {
         name: "Reviews",
-        link: "/",
+        link: "/product",
       },
       {
         name: "Trending Search",

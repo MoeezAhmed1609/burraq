@@ -48,7 +48,7 @@ const MobilePopularSlider = () => {
         {novexProducts.slice(0, 6).map((product, i) => (
           <SwiperSlide className="h-fit">
             <Grid item xs={12} sm={3} key={i}>
-              <Box className="h-[70vh] w-full relative bg-white border rounded-lg flex flex-col items-center py-5">
+              {/* <Box className="h-[70vh] w-full relative bg-white border rounded-lg flex flex-col items-center py-5">
                 <IconButton className="absolute top-3 right-3">
                   <FavoriteBorderIcon className="text-2xl text-[#cccccc]" />
                 </IconButton>
@@ -76,6 +76,40 @@ const MobilePopularSlider = () => {
                         {product.rating}
                       </Typography>
                       <Typography className="text-[10px] ps-2 text-[#818181] poppins">
+                        ( {product.reviews} Reviews )
+                      </Typography>
+                    </Box>
+                  </Box>
+                </Box>
+              </Box> */}
+              <Box className="h-[70vh] w-full relative bg-white border rounded-lg flex flex-col items-center py-5">
+                <IconButton className="absolute top-3 right-3">
+                  <FavoriteBorderIcon className="text-2xl text-[#cccccc]" />
+                </IconButton>
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="h-[60%] w-auto"
+                />
+                <Box className="h-[40%] w-full flex flex-col justify-between p-2.5 pt-2.5 sm:pt-2.5 lg:pt-8">
+                  <Typography className="text-lg sm:text-lg lg:text-lg xl:text-2xl text-center w-full px-1 text-black poppins">
+                    {product.name}
+                  </Typography>
+                  <Box>
+                    <Box className="flex justify-between px-2 md:px-2 lg:px-5 items-center w-full pb-3">
+                      <Typography className="text-lg sm:text-xl xl:text-2xl font-semibold text-left text-[#FF3030] poppins">
+                        AED {product.price}
+                      </Typography>
+                      <Typography className="text-sm sm:text-base xl:text-lg line-through text-left text-[#818181] poppins">
+                        AED {product.discount}
+                      </Typography>
+                    </Box>
+                    <Box className="flex items-center w-full px-2 md:px-2 lg:px-5">
+                      <StarIcon className="text-base text-[#2858a3]" />
+                      <Typography className="text-sm  text-black poppins">
+                        {product.rating}
+                      </Typography>
+                      <Typography className="text-xs ps-2 text-[#818181] poppins">
                         ( {product.reviews} Reviews )
                       </Typography>
                     </Box>

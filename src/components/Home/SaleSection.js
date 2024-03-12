@@ -25,7 +25,7 @@ const SaleSection = () => {
         className="absolute top-16 w-[85%] h-fit sm:h-56 rounded-2xl bg-no-repeat bg-center bg-cover"
         sx={{ backgroundImage: `url(${salebackground})` }}
       >
-        <Box className="sale-gradient rounded-2xl h-full w-full px-10 py-6">
+        <Box className="sale-gradient rounded-2xl h-full w-full px-5 sm:px-10 py-6">
           <Grid container className="h-full">
             <Grid
               item

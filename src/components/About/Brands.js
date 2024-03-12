@@ -26,7 +26,7 @@ const Brands = () => {
     },
   ];
   return (
-    <Box className="w-full relative flex justify-center items-center h-[80vh]">
+    <Box className="w-full relative flex justify-center items-center h-fit mt-8 sm:mt-0 sm:h-[80vh]">
       {/* <Box className="absolute -top-5 opacity-10">
         <img className="h-96 w-auto" src={brands} alt="brands logo" />
       </Box> */}

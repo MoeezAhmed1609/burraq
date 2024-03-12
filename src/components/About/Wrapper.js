@@ -11,7 +11,7 @@ const Wrapper = () => {
             <img className="w-full h-auto relative" src={bg} alt="Profile" />
           </span>
         </Grid>
-        <Grid item xs={12} sm={12} md={8} className="px-0 sm:pe-8 sm:ps-20">
+        <Grid item xs={12} sm={12} md={8} className="px-0 sm:pe-8 sm:ps-20 mt-10 sm:mt-0">
           <Typography className="poppins capitalize text-3xl font-bold w-full text-[#2E2E2E] mb-5 py-2">
             Customer service is the next competitive battle ground
           </Typography>

@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import watermark from "../../assets/watermark.svg";
 import profile from "../../assets/profile.jpg";
+import signature from "../../assets/signature.svg";
 
 const Message = () => {
   const list = [
@@ -68,9 +69,12 @@ const Message = () => {
           I greatly appreciate and cherish
         </Typography>
       </Grid>
-      <Grid xs={12} sm={3} />
+      <Grid xs={12} sm={3} className="hidden md:hidden lg:block" />
       <Grid item xs={12} sm={9} className="px-4 sm:px-10">
-        <Typography className="text-lg pt-0 sm:pt-8 text-[#02ADEC] poppins">
+        <Box className="w-fit mt-0 sm:mt-4 pe-3 h-fit pb-2 border-b-2">
+          <img src={signature} alt="signature" className="h-8 w-fit" />
+        </Box>
+        <Typography className="text-lg  text-black poppins pt-3">
           Sumair Malik
         </Typography>
       </Grid>
@@ -88,7 +92,10 @@ const Message = () => {
       <Grid item xs={12} sm={6} className="pt-6 sm:py-6 px-4 sm:px-10">
         <ul>
           {list.slice(0, 6).map((point, i) => (
-            <li key={i} className="text-sm xl:text-base text-[#152E3A] nunito py-1.5">
+            <li
+              key={i}
+              className="text-sm xl:text-base text-[#152E3A] nunito py-1.5"
+            >
               {point}
             </li>
           ))}
@@ -97,7 +104,10 @@ const Message = () => {
       <Grid item xs={12} sm={6} className="pb-6 sm:py-6 px-4 sm:px-10">
         <ul>
           {list.slice(6, 12).map((point, i) => (
-            <li key={i} className="text-sm xl:text-base text-[#152E3A] nunito py-1.5">
+            <li
+              key={i}
+              className="text-sm xl:text-base text-[#152E3A] nunito py-1.5"
+            >
               {point}
             </li>
           ))}
