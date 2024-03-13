@@ -15,7 +15,7 @@ const Wrapper = () => {
           <Typography className="poppins capitalize text-3xl font-bold w-full text-[#2E2E2E] mb-5 py-2">
             Customer service is the next competitive battle ground
           </Typography>
-          <Typography className="text-xs pb-4 text-[#152E3A] poppins leading-5">
+          <Typography className="text-xs pb-4 text-[#152E3A] poppins leading-7">
             Not only on the quality standards but also focusing on the after
             sale services through follow-up, open door communication & feedback
             analysis. BSTC ensures the satisfaction of valued customers by
