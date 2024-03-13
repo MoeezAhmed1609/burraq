@@ -19,7 +19,7 @@ import picture5 from "../../assets/picture5.jpg";
 const Gallery = () => {
   const images = [picture1, picture2, picture3, picture4, picture5];
   return (
-    <Box className="w-full h-fit pt-20 px-5 sm:px-10 pb-10">
+    <Box className="w-full h-fit pt-20 px-5 sm:px-10 pb-6">
       <Typography className="poppins text-center capitalize text-3xl font-bold w-full text-[#2E2E2E] pb-5 sm:pb-14">
         Picture Gallery
       </Typography>
@@ -56,7 +56,11 @@ const Gallery = () => {
         <Grid
           container
           sx={{
-            height: "24vh",
+            height: {
+              xs: "24vh",
+              sm:"28vh",
+              md: "40vh",
+            },
             width: "100%",
             marginTop: "10px",
             overflow: "hidden",
@@ -69,7 +73,7 @@ const Gallery = () => {
                 loading="lazy"
                 alt={`Product${i}`}
                 style={{
-                  height: "auto",
+                  height: "fit-content",
                   width: "100%",
                   margin: "10px",
                   cursor: "pointer",

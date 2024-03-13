@@ -4,18 +4,18 @@ import bg from "../../assets/servicebg.jpg";
 
 const Wrapper = () => {
   return (
-    <Box className="w-full h-fit py-6 px-5 sm:px-14">
+    <Box className="w-full h-fit py-6 px-5 sm:px-14 bg-[#F4F6F7]">
       <Grid container className="pb-10">
         <Grid item xs={12} sm={12} md={4} className="flex justify-center">
           <span class="before:block before:absolute before:-inset-1 before:translate-x-6 before:translate-y-5 before:-scale-y-95 before:-scale-x-95 before:bg-[#02ADEC] relative inline-block">
             <img className="w-full h-auto relative" src={bg} alt="Profile" />
           </span>
         </Grid>
-        <Grid item xs={12} sm={12} md={8} className="px-0 sm:pe-8 sm:ps-20 mt-10 sm:mt-0">
+        <Grid item xs={12} sm={12} md={8} className="px-0 sm:px-8 lg:ps-20 mt-10 md:mt-10 lg:mt-0">
           <Typography className="poppins capitalize text-3xl font-bold w-full text-[#2E2E2E] mb-5 py-2">
             Customer service is the next competitive battle ground
           </Typography>
-          <Typography className="text-xs pb-4 text-[#152E3A] poppins">
+          <Typography className="text-xs pb-4 text-[#152E3A] poppins leading-5">
             Not only on the quality standards but also focusing on the after
             sale services through follow-up, open door communication & feedback
             analysis. BSTC ensures the satisfaction of valued customers by

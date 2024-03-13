@@ -23,7 +23,7 @@ const About = () => {
       <Certifications />
       <Banner2 />
       <Gallery />
-      <Box className="flex justify-center">
+      <Box className="flex justify-center bg-[#F4F6F7] pt-6">
         <Divider className="bg-[#CCCCCC] w-[90%] mb-10" />
       </Box>
       <Wrapper />
