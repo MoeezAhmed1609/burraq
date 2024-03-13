@@ -8,7 +8,7 @@ import product2 from "../assets/product-2.jpg";
 import product3 from "../assets/product-3.jpg";
 import Content from "../components/Product/Content";
 import Description from "../components/Product/Description";
-import Faq from "../components/Product/Faq";
+// import Faq from "../components/Product/Faq";
 import Popular from "../components/Home/Popular";
 import BrandBanner from "../components/Home/BrandBanner";
 
@@ -17,7 +17,7 @@ const Product = () => {
   return (
     <Box className="w-full h-auto bg-white m-0 p-0">
       <Hero bg={bg} title={"Product"} />
-      <Grid container className="py-16 px-5 sm:p-16 pb-0">
+      <Grid container className="pt-16 px-5 sm:p-16 sm:pb-0">
         <Grid item sm={5} xs={12}>
           <Slider images={images} />
         </Grid>
@@ -26,7 +26,7 @@ const Product = () => {
         </Grid>
         <Description />
         <Grid xs={12}>
-          <Faq />
+          {/* <Faq /> */}
           <Divider className="bg-black mt-16" />
         </Grid>
       </Grid>

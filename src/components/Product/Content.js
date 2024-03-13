@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Box, Button, Divider, IconButton, Typography } from "@mui/material";
 import { Add, Remove } from "@mui/icons-material";
-import { features } from "../../data";
 
 const Content = () => {
   return (

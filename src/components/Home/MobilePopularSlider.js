@@ -1,8 +1,6 @@
 import React from "react";
 import { Box, Button, Grid, IconButton, Typography } from "@mui/material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import StarIcon from "@mui/icons-material/Star";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 
 import bg from "../../assets/sliderbg.jpg";
 import { novexProducts } from "../../data";

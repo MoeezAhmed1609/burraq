@@ -1,6 +1,5 @@
 import React from "react";
-import { Box, Divider, Grid, Typography } from "@mui/material";
-import brands from "../../assets/brandslogo.svg";
+import { Box, Grid, Typography } from "@mui/material";
 import novex from "../../assets/novex.jpg";
 import zilco from "../../assets/zilcoabout.png";
 import cavil from "../../assets/cavilabout.png";

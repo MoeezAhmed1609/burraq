@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Box, Button, Menu, MenuItem, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Box, Button, Typography } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import RelatedSlider from "../components/Blogs/RelatedSlider";
 import BlogLayout from "../components/Blogs/Blog";
 import Aside from "../components/Blogs/Aside";
